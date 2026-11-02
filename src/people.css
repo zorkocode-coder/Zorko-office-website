@@ -1,0 +1,470 @@
+.people-hero {
+  display: grid;
+  grid-template-columns: 1.6fr 0.65fr;
+  gap: 100px;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  align-items: end;
+}
+.people-hero h1 {
+  margin-top: 35px;
+  font-size: clamp(60px, 6.5vw, 100px);
+}
+.people-hero > div > p:not(.label) {
+  font-size: 14px;
+  max-width: 530px;
+  color: var(--muted);
+  margin-top: 30px;
+}
+.people-hero nav {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 7px;
+}
+.people-hero nav > span {
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+.people-hero nav > a {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: 13px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+.people-hero nav > a > small {
+  font-size: 8px;
+  color: var(--muted);
+}
+.people-hero nav > a > span {
+  margin-left: auto;
+  font-size: 20px;
+}
+.people-management .section-title > p {
+  font-size: 12px;
+  color: var(--muted);
+}
+.management-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 22px;
+}
+.management-portrait {
+  position: relative;
+  overflow: hidden;
+  background: #e0dfd1;
+}
+.management-portrait > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.7s;
+}
+.management-portrait > span {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  background: var(--paper);
+  font-size: 8px;
+  padding: 8px 10px;
+}
+.management-grid h3 {
+  font-size: 24px;
+  margin-top: 23px;
+  letter-spacing: -0.045em;
+}
+.management-grid article > p {
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-top: 10px;
+}
+.management-founder-link {
+  margin-top: 45px;
+}
+.people-leadership-groups {
+  background: #e9eade;
+  padding-block: 20px;
+}
+.leadership-team {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 90px;
+  align-items: center;
+  padding-block: 75px;
+  scroll-margin-top: 90px;
+}
+.leadership-team + .leadership-team {
+  border-top: 1px solid #c5cdba;
+}
+.leadership-team-photo > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  background: #dce1d2;
+}
+.leadership-team-copy h2 {
+  margin-top: 30px;
+  font-size: clamp(45px, 5vw, 70px);
+}
+.leadership-team-copy > p:not(.label) {
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 25px;
+  max-width: 340px;
+}
+.leadership-team-1 {
+  grid-template-columns: 0.8fr 1.2fr;
+}
+.leadership-team-1 .leadership-team-photo {
+  order: 2;
+}
+.team-focus {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 25px;
+}
+.team-focus > span {
+  font-size: 9px;
+  padding: 9px 12px;
+  border: 1px solid #bcc8af;
+  line-height: 1.4;
+}
+.leadership-team-copy > .text-link {
+  font-size: 11px;
+  margin-top: 35px;
+}
+.people-directory-toolbar {
+  border-top: 1px solid var(--line);
+  padding-top: 25px;
+}
+.people-search {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.people-search label {
+  font-size: 11px;
+  flex-shrink: 0;
+}
+.people-search input {
+  width: min(550px, 100%);
+  padding: 15px 0;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #b7c0ac;
+  font:
+    14px Manrope,
+    Arial,
+    sans-serif;
+  color: var(--ink);
+  border-radius: 0;
+}
+.people-search input:focus-visible {
+  outline: 2px solid #ac4c24;
+  outline-offset: 5px;
+}
+.people-directory-toolbar .filter-row {
+  margin-bottom: 0;
+}
+.people-results {
+  font-size: 10px;
+  color: var(--muted);
+  margin: 25px 0 35px;
+}
+.people-directory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 60px 45px;
+}
+.people-department-photo {
+  overflow: hidden;
+  background: #e9eade;
+}
+.people-department-photo > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  object-position: center top;
+  transition: transform 0.7s;
+}
+.people-department-caption {
+  padding-top: 25px;
+}
+.people-department-caption > small {
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+.people-department-caption h3 {
+  font-size: 32px;
+  margin-top: 12px;
+}
+.people-department-caption > p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 490px;
+  margin-top: 16px;
+}
+.people-empty {
+  padding: 50px 0;
+}
+.people-empty h3 {
+  font-size: 32px;
+}
+.people-empty p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 20px 0;
+}
+.people-empty button {
+  background: none;
+}
+.people-next-chapter {
+  background: #e9eade;
+  padding-block: 95px;
+}
+.people-next-chapter h2 {
+  margin-top: 30px;
+}
+.people-next-chapter > .wrap > div {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  margin-top: 35px;
+}
+.people-management,
+.people-directory {
+  scroll-margin-top: 0;
+}
+@media (max-width: 1100px) {
+  .people-hero {
+    gap: 60px;
+  }
+  .management-grid {
+    gap: 17px;
+  }
+  .management-grid h3 {
+    font-size: 21px;
+  }
+  .leadership-team {
+    gap: 55px;
+  }
+  .people-directory-grid {
+    gap: 50px 30px;
+  }
+}
+@media (max-width: 800px) {
+  .people-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 65px;
+  }
+  .people-hero nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 35px;
+    max-width: 650px;
+  }
+  .people-hero nav > span {
+    grid-column: 1/-1;
+  }
+  .people-hero h1 {
+    font-size: 65px;
+  }
+  .management-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px 22px;
+  }
+  .management-grid h3 {
+    font-size: 24px;
+  }
+  .leadership-team {
+    gap: 35px;
+    grid-template-columns: 1fr 1fr;
+    padding-block: 60px;
+  }
+  .leadership-team-copy h2 {
+    font-size: 45px;
+  }
+  .leadership-team-copy > p:not(.label) {
+    font-size: 12px;
+  }
+  .leadership-team-copy .label {
+    font-size: 7px;
+  }
+  .team-focus {
+    gap: 7px;
+    margin-top: 20px;
+  }
+  .team-focus > span {
+    font-size: 8px;
+    padding: 8px 10px;
+  }
+  .people-directory-grid {
+    gap: 45px 25px;
+  }
+  .people-department-caption h3 {
+    font-size: 27px;
+  }
+  .people-department-caption > p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .people-hero {
+    padding-top: 55px;
+    padding-bottom: 5px;
+    gap: 35px;
+  }
+  .people-hero h1 {
+    font-size: 49px;
+    line-height: 1.08;
+    margin-top: 28px;
+  }
+  .people-hero > div > p:not(.label) {
+    font-size: 12px;
+    margin-top: 25px;
+  }
+  .people-hero nav {
+    gap: 0 25px;
+  }
+  .people-hero nav > span {
+    font-size: 7px;
+    margin-bottom: 10px;
+  }
+  .people-hero nav > a {
+    font-size: 11px;
+    gap: 15px;
+    padding-block: 15px;
+  }
+  .people-hero nav > a > small {
+    font-size: 7px;
+  }
+  .people-management .section-title > p {
+    margin-top: 20px;
+    font-size: 11px;
+  }
+  .management-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 18px;
+  }
+  .management-grid h3 {
+    font-size: 23px;
+    margin-top: 17px;
+  }
+  .management-grid article > p {
+    font-size: 9px;
+    margin-top: 8px;
+  }
+  .management-portrait > span {
+    left: 9px;
+    bottom: 9px;
+    font-size: 7px;
+    padding: 7px 9px;
+  }
+  .management-founder-link {
+    font-size: 11px;
+    margin-top: 30px;
+  }
+  .people-leadership-groups {
+    padding-block: 0;
+  }
+  .leadership-team {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-block: 55px;
+    scroll-margin-top: 75px;
+  }
+  .leadership-team-1 .leadership-team-photo {
+    order: 0;
+  }
+  .leadership-team-copy h2 {
+    font-size: 43px;
+    margin-top: 20px;
+  }
+  .leadership-team-copy > p:not(.label) {
+    font-size: 13px;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .leadership-team-copy .label {
+    font-size: 7px;
+  }
+  .leadership-team-copy > .text-link {
+    font-size: 11px;
+    margin-top: 25px;
+  }
+  .people-search {
+    display: block;
+    margin-bottom: 25px;
+  }
+  .people-search label {
+    font-size: 10px;
+    display: block;
+  }
+  .people-search input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  .people-search input::placeholder {
+    font-size: 12px;
+  }
+  .people-results {
+    font-size: 9px;
+    margin-block: 25px 30px;
+  }
+  .people-directory-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .people-department-caption {
+    padding-top: 20px;
+  }
+  .people-department-caption > small {
+    font-size: 7px;
+  }
+  .people-department-caption h3 {
+    font-size: 29px;
+    margin-top: 10px;
+  }
+  .people-department-caption > p {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .people-department-caption .team-focus > span {
+    font-size: 8px;
+  }
+  .people-next-chapter {
+    padding-block: 65px;
+  }
+  .people-next-chapter h2 {
+    font-size: 40px;
+    margin-top: 25px;
+  }
+  .people-next-chapter > .wrap > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  .people-next-chapter .text-link {
+    font-size: 11px;
+  }
+}

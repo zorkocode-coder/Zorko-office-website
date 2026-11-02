@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.cache/
+.env
+.env.*
+!.env.example
+*.log
+preview-*.png
+.DS_Store
+Thumbs.db
